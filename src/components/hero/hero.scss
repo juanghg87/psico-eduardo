@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import "../../App.scss";
 
 
 .main-video {
@@ -15,11 +16,19 @@
         font-style: normal;
         color: #6c899b;
         font-size: 50px;
+
+        @include mobile{
+            font-size: 40px;
+        }
     }
 
     .video-container {
         display: flex;
         background-color: #6c899b;
+
+        @include mobile{
+            flex-direction: column;
+        }
 
         .video {
             flex: 1;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import "../../App.scss";
 
 body {
     margin: 0;
@@ -13,11 +14,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile{
+        .a-container{
+            display: none;
+        }
+    }
 }
 
 .logo-container {
     position: fixed;
     left: 1%;
+
+    @include mobile{
+        width: 100%;
+    }
 
     .img-logo {
         width: 60%;
@@ -34,5 +45,7 @@ body {
     font-weight: bolder;
     font-style: normal;
     color: #6c899b;
+
+   
 }
 

@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #d9d8d8 ; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px; 
+}
+
+@mixin mobile {
+  @media (max-width: 738px) {
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+      @content;
+      
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1366px) {
+      @content;
+  }
+}
