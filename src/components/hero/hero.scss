@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.main-video {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+    .title-main {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        color: #6c899b;
+        font-size: 50px;
+    }
+
+    .video-container {
+        display: flex;
+        background-color: #6c899b;
+
+        .video {
+            flex: 1;
+
+            iframe {
+                width: 100%;
+            }
+        }
+
+        .pop-message {
+            height: 320px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+
+            .pop {
+                background-color: white;
+                color: #6c899b;
+                border: none;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                font-size: 15px;
+                box-shadow: 0px 11px 18px 0px rgba(0,0,0,0.74);
+                cursor: pointer;
+                font-weight: bolder;
+            }
+
+            .popover{
+                position: absolute;
+                top: -5%;
+                width: 300px;
+                background-color: white;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: "Lora", serif;
+                padding: 15%;
+                color: #6c899b;
+                border-radius: 10px;
+                box-shadow: 0px 11px 18px 0px #000000;
+            }
+        }
+
+        .maintext-video {
+            flex: 1;
+            margin: auto;
+
+            h2 {
+                font-family: "Playfair Display", serif;
+                font-optical-sizing: auto;
+                font-weight: bold;
+                font-style: normal;
+                color: white;
+            }
+
+            .text-video {
+                flex: 1;
+                font-family: "Lora", serif;
+                margin: auto;
+                text-align: justify;
+                padding: 6%;
+                color: #6c899b;
+                color: white;
+                font-weight: bolder;
+            }
+        }
+
+    }
+
+}
