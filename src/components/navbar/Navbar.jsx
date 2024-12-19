@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import "../navbar/navbar.scss";
 import logo from "../../assets/logo.PNG";
-import { type } from '@testing-library/user-event/dist/type';
 
 ;
 
@@ -28,7 +27,7 @@ const variantsA = {
 }
 
 const Navbar = () => {
-  
+
 
     return (
         <>
@@ -48,54 +47,79 @@ const Navbar = () => {
                         Coaching
                     </motion.a> */}
                     <motion.a
-                        href=""
+                        href="#"
                         initial="initial"
                         animate="initial"
                         whileHover="animate"
+                        whileTap={{
+                            scale: 0.55,
+                            backgroundColor: '#6c899b', 
+                            color: '#fff' 
+                         }}
                         variants={variantsA}
                         className='nav-a'
                     >
                         Servicios
                     </motion.a>
                     <motion.a
-                        href=""
+                        href="#"
                         initial="initial"
                         animate="initial"
                         whileHover="animate"
+                        whileTap={{
+                            scale: 0.55,
+                            backgroundColor: '#6c899b', 
+                            color: '#fff' 
+                         }}
                         variants={variantsA}
                         className='nav-a'
                     >
                         Psicoterapia
                     </motion.a>
                     <motion.a
-                        href=""
+                        href="#"
                         initial="initial"
                         animate="initial"
                         whileHover="animate"
+                        whileTap={{
+                            scale: 0.55,
+                            backgroundColor: '#6c899b', 
+                            color: '#fff' 
+                         }}
                         variants={variantsA}
                         className='nav-a'
                     >
                         Blog
                     </motion.a>
                     <motion.a
-                        href=""
+                        href="#"
                         initial="initial"
                         animate="initial"
                         whileHover="animate"
+                        whileTap={{
+                            scale: 0.55,
+                            backgroundColor: '#6c899b', 
+                            color: '#fff' 
+                         }}
                         variants={variantsA}
                         className='nav-a'
                     >
                         Online
                     </motion.a>
                     <motion.a
-                        href=""
+                        href="#"
                         initial="initial"
                         animate="initial"
                         whileHover="animate"
+                        whileTap={{
+                            scale: 0.55,
+                            backgroundColor: '#6c899b', 
+                            color: '#fff' 
+                         }}
                         variants={variantsA}
-                        className='nav-a'
+                        className='nav-a contact'
                     >
-                        Contacto
+                        Contáctame
                     </motion.a>
                 </ul>
             </nav>

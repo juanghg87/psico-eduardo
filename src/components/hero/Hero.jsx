@@ -32,9 +32,17 @@ const Hero = () => {
                         ></iframe>
                     </div>
                     <div className="pop-message">
-                        <button className='pop' onClick={togglePopover}>
+                        <motion.button 
+                        className='pop' 
+                        onClick={togglePopover}
+                        whileTap={{
+                            scale: 1.2,
+                            backgroundColor: '#6c899b', 
+                            color: '#fff' 
+                         }}
+                        >
                             Emociones
-                        </button>
+                        </motion.button>
                         {isPopoverVisible && (
                             <motion.div
                                 className='popover'

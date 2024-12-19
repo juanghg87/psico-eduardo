@@ -37,18 +37,18 @@ const Button = () => {
     <>
       <div></div>
       <div className='btn-container'>
-      <motion.a
+        <motion.a
           href="tel:+573147624948"
           target='blank'
           noopener noreferrer
-          aria-label="Perfil de LinkedIn de Eduardo Andrés"
-          title='LinkedIn'
+          aria-label="Perfil de LinkedIn de Eduardo Andrés Ospina"
+          title='Llamada a celular de Eduardo Ospina'
           custom={3}
           variants={variants}
           initial="initial"
           animate={clic ? "animate" : "initial"}
         >
-          <FiPhoneCall  className='media' />
+          <FiPhoneCall className='media' />
         </motion.a>
         <motion.a
           href="https://www.linkedin.com/in/eduardo-andr%C3%A9s-o-68674755/"
@@ -92,7 +92,16 @@ const Button = () => {
           <AiOutlineWhatsApp className='media' />
         </motion.a>
 
-        <CiMedicalCross className='cross' onClick={handleCrossClick} />
+        <CiMedicalCross
+          className='cross'
+          onClick={handleCrossClick}
+          whileTap={{
+            backgroundColor: '#6c899b',
+            color: '#fff',
+            scale:(1.2),
+            rotate: 45,
+          }}
+        />
       </div>
     </>
   );
