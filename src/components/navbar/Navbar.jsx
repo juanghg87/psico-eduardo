@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import "../navbar/navbar.scss";
 import logo from "../../assets/logo.PNG";
-
-;
+import { IoMenu } from "react-icons/io5";
+import { MdClose } from "react-icons/md";
 
 const variantsA = {
     initial: {
@@ -26,7 +26,12 @@ const variantsA = {
     }
 }
 
+
 const Navbar = () => {
+    const [isMenuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setMenuOpen(!isMenuOpen);
+    };
 
 
     return (
@@ -53,9 +58,9 @@ const Navbar = () => {
                         whileHover="animate"
                         whileTap={{
                             scale: 0.55,
-                            backgroundColor: '#6c899b', 
-                            color: '#fff' 
-                         }}
+                            backgroundColor: '#6c899b',
+                            color: '#fff'
+                        }}
                         variants={variantsA}
                         className='nav-a'
                     >
@@ -68,9 +73,9 @@ const Navbar = () => {
                         whileHover="animate"
                         whileTap={{
                             scale: 0.55,
-                            backgroundColor: '#6c899b', 
-                            color: '#fff' 
-                         }}
+                            backgroundColor: '#6c899b',
+                            color: '#fff'
+                        }}
                         variants={variantsA}
                         className='nav-a'
                     >
@@ -83,9 +88,9 @@ const Navbar = () => {
                         whileHover="animate"
                         whileTap={{
                             scale: 0.55,
-                            backgroundColor: '#6c899b', 
-                            color: '#fff' 
-                         }}
+                            backgroundColor: '#6c899b',
+                            color: '#fff'
+                        }}
                         variants={variantsA}
                         className='nav-a'
                     >
@@ -98,9 +103,9 @@ const Navbar = () => {
                         whileHover="animate"
                         whileTap={{
                             scale: 0.55,
-                            backgroundColor: '#6c899b', 
-                            color: '#fff' 
-                         }}
+                            backgroundColor: '#6c899b',
+                            color: '#fff'
+                        }}
                         variants={variantsA}
                         className='nav-a'
                     >
@@ -113,15 +118,30 @@ const Navbar = () => {
                         whileHover="animate"
                         whileTap={{
                             scale: 0.55,
-                            backgroundColor: '#6c899b', 
-                            color: '#fff' 
-                         }}
+                            backgroundColor: '#6c899b',
+                            color: '#fff'
+                        }}
                         variants={variantsA}
                         className='nav-a contact'
                     >
                         Contáctame
                     </motion.a>
                 </ul>
+                <motion.div>
+                    <div onClick={toggleMenu} className='menu-icon'
+                    >
+                        {isMenuOpen ? <MdClose className='close-menu' /> : <IoMenu className='menu' />}
+                    </div>
+                    {isMenuOpen && (
+                        <div className='menu-content'>
+                            <span>Servicios</span>
+                            <span>Psicoterapia</span>
+                            <span>Blog</span>
+                            <span>Online</span>
+                            <span>Contáctame</span>
+                        </div>
+                    )}
+                </motion.div>
             </nav>
         </>
     );

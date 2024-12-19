@@ -24,7 +24,7 @@ const Hero = () => {
                         <iframe
                             height="315"
                             src="https://www.youtube.com/embed/KsThEXZS9wI?si=c3otqOWsIYGhzIBf"
-                            title="YouTube video player"
+                            title="psicoterapia, coaching, bienestar, salud mental, atención psicológica, psicoterapia, psicología clínica, acompañamiento infantil, acompañamiento adolescentes, acompañamiento adultos, acompañamiento pareja y familia familiar, Eduardo Ospina"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin"
