@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import "../button/button.scss";
-import { CiMedicalCross } from "react-icons/ci";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 import { TiSocialLinkedin } from "react-icons/ti";
