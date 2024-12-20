@@ -10,6 +10,7 @@ const Presentation = () => {
                     Mi psicoterapia se centra en el desarrollo de tu Salud Mental, desarrollando tu potencial personal:
 
                 </h3>
+
                 <br />
                 <br />
                 Mejorando tu relación contigo mismo y tu autoconocimiento.
