@@ -11,9 +11,9 @@
 
 
     .cross {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+        width: 100px;
+        height: 40px;
+         border-radius: 10px;
         background-color: white;
         padding: 15px;
         color: #6c899b;
@@ -22,12 +22,17 @@
         box-shadow: 0px 10px 13px -7px #000000, 5px 18px 12px 0px rgba(0, 0, 0, 0.18);
         transition: all 0.5s ease;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bolder;
 
         &:hover{
             background-color: #6c899b;
             color: white;
             transform: scale(1.2);
-            rotate: 45deg;
+            // rotate: 45deg;
         }
     }
 

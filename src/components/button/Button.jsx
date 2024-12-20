@@ -23,6 +23,8 @@ const variants = {
   })
 };
 
+
+
 const Button = () => {
   const email = "psicologo.eduardoospina@gmail.com";
   const subject = "Consulta";
@@ -92,16 +94,16 @@ const Button = () => {
           <AiOutlineWhatsApp className='media' />
         </motion.a>
 
-        <CiMedicalCross
+        <span
           className='cross'
           onClick={handleCrossClick}
           whileTap={{
             backgroundColor: '#6c899b',
             color: '#fff',
             scale:(1.2),
-            rotate: 45,
+            // rotate: 45,
           }}
-        />
+        >¡Contáctame! </span>
       </div>
     </>
   );

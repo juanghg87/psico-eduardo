@@ -27,6 +27,19 @@ const variantsA = {
 }
 
 
+const variantMenu = {
+    initial: {
+        opacity: 0,
+    },
+    animate: {
+        opacity: 1,
+        transition: {
+            duration: 1,
+        }
+    }
+}
+
+
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {
@@ -133,13 +146,17 @@ const Navbar = () => {
                         {isMenuOpen ? <MdClose className='close-menu' /> : <IoMenu className='menu' />}
                     </div>
                     {isMenuOpen && (
-                        <div className='menu-content'>
+                        <motion.div className='menu-content'
+                            initial="initial"
+                            animate="animate"
+                            variants={variantMenu}
+                        >
                             <span>Servicios</span>
                             <span>Psicoterapia</span>
                             <span>Blog</span>
                             <span>Online</span>
                             <span>Contáctame</span>
-                        </div>
+                        </motion.div>
                     )}
                 </motion.div>
             </nav>
