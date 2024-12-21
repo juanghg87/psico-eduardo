@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/psico-eduardo/static/css/main.192e8603.css",
-    "main.js": "/psico-eduardo/static/js/main.54f2b20b.js",
+    "main.css": "/psico-eduardo/static/css/main.663d308d.css",
+    "main.js": "/psico-eduardo/static/js/main.87af620f.js",
     "static/media/eduardo.jpg": "/psico-eduardo/static/media/eduardo.219ffbe57cdfec083ff1.jpg",
     "static/media/logo.PNG": "/psico-eduardo/static/media/logo.8fa0c8dc9363e096efea.PNG",
     "index.html": "/psico-eduardo/index.html",
-    "main.192e8603.css.map": "/psico-eduardo/static/css/main.192e8603.css.map",
-    "main.54f2b20b.js.map": "/psico-eduardo/static/js/main.54f2b20b.js.map"
+    "main.663d308d.css.map": "/psico-eduardo/static/css/main.663d308d.css.map",
+    "main.87af620f.js.map": "/psico-eduardo/static/js/main.87af620f.js.map"
   },
   "entrypoints": [
-    "static/css/main.192e8603.css",
-    "static/js/main.54f2b20b.js"
+    "static/css/main.663d308d.css",
+    "static/js/main.87af620f.js"
   ]
 }
