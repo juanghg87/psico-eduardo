@@ -58,7 +58,21 @@ const Hero = () => {
                 <div className="maintext-video">
                     <h2>Consulta psicológica presencial, virtual y domiciliaria</h2>
                     <p className='text-video'>
-                        Mi psicoterapia se centra en el desarrollo de tu Salud Mental, desarrollando tu potencial personal, mejorando tu relación contigo mismo y tu autoconocimiento, gestionando y regulando tus emociones de forma distinta, comprendiendo tus vínculos afectivos pasados y actuales, construyendo nuevos sentidos y significados de vida, además, de avanzar hacia diferentes formas de relacionamiento de pareja y familiares, más estables y duraderas.
+                        <li>
+                            Mi psicoterapia se centra en el mejoramiento de tu Salud Mental, desarrollando tu potencial personal.
+                        </li>
+                        <li>
+                            Mejorando tu relación contigo mismo y tu autoconocimiento.
+                        </li>
+                        <li>
+                            Gestionando y regulando tus emociones de forma distinta.
+                        </li>
+                        <li>
+                            Comprendiendo tus vínculos afectivos pasados y actuales, construyendo nuevos sentidos y significados de vida.
+                        </li>
+                        <li>
+                            Además, de avanzar hacia diferentes formas de relacionamiento de pareja y familiares, más estables y duraderas.
+                        </li>
                     </p>
                 </div>
             </div>
