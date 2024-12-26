@@ -239,6 +239,10 @@ section {
                     color: black;
                     transform: scale(1.15);
                     border-radius: 10px;
+
+                    @include mobile{
+                        border-radius: 3px;
+                    }
                 }
             }
         }
